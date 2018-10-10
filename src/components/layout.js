@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 import { rhythm, scale } from '../utils/typography';
 import NavBar from '../components/navbar';
 
-const title = `Morgan${window.innerWidth < 768 ? '\n' : ' '}Emmett${
-  window.innerWidth < 768 ? '\n' : ' '
-}Balog`;
-
+// const title = `Morgan${window.innerWidth < 768 ? '\n' : ' '}Emmett${
+//   window.innerWidth < 768 ? '\n' : ' '
+// }Balog`;
+const title = 'Morgan Emmett Balog'
 class Template extends React.Component {
   render() {
     const { location, children } = this.props;

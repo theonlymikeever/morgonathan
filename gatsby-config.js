@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Morgan Balog | Writer, Artis & Cosmic Slime-Lord',
+    title: 'Morgan Balog | Writer, Artist & Cosmic Slime-Lord',
     author: 'Morgan Balog',
     description: 'Graduate of Ramapo College of New Jersey with a BA in Communications Writing, Morgan Balog is a writer of fiction, prose and poetry.',
     siteUrl: 'https://morganemmettbalog.com',
@@ -54,7 +54,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/pencil-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

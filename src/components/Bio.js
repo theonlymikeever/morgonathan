@@ -4,7 +4,7 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import profilePic from './profile-pic.jpg'
+import profilePic from '../../public/images/morgan-avatar2.png'
 import { rhythm } from '../utils/typography'
 
 import { InstagramIcon, LinkedInIcon, TwitterIcon } from './Svg';
@@ -16,8 +16,8 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          flexWrap: 'wrap',
           marginBottom: rhythm(1.5),
+          alignItems: 'center'
         }}
       >
         <img
@@ -26,47 +26,55 @@ class Bio extends React.Component {
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
+            width: rhythm(6),
+            height: rhythm(6),
+            borderRadius: '50%'
           }}
         />
-        <p
-          style={{
-            flex: '2'
-          }}
-        >
-          Morgan lives and works in New Jersey. You can follow him on the various soul-sucking social media platforms, if that's your jam. <br />
-        </p>
         <div
           style={{
-            width: '100%',
-            flex: '0 0 100%'
+            display: 'flex',
+            flexWrap: 'wrap'
           }}
         >
-          <a
-            href="https://twitter.com/MorganBALROG"
+          <p
             style={{
-              margin: '5px'
+              flex: '2'
             }}
           >
-            <TwitterIcon height="25" width="25" />
-          </a>
-          <a
-            href="https://www.instagram.com/morganbalrog/"
+            Morgan lives and works in New Jersey. You can follow him on the various soul-sucking social media platforms, if that's your jam. <br />
+          </p>
+          <div
             style={{
-              margin: '5px'
+              width: '100%',
+              flex: '0 0 100%'
             }}
           >
-            <InstagramIcon height="25" width="25" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/morgan-e-balog-55225558/"
-            style={{
-              margin: '5px'
-            }}
-          >
-            <LinkedInIcon height="25" width="25" />
-          </a>
+            <a
+              href="https://twitter.com/MorganBALROG"
+              style={{
+                margin: '5px'
+              }}
+            >
+              <TwitterIcon height="25" width="25" />
+            </a>
+            <a
+              href="https://www.instagram.com/morganbalrog/"
+              style={{
+                margin: '5px'
+              }}
+            >
+              <InstagramIcon height="25" width="25" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/morgan-e-balog-55225558/"
+              style={{
+                margin: '5px'
+              }}
+            >
+              <LinkedInIcon height="25" width="25" />
+            </a>
+          </div>
         </div>
       </div>
     )
