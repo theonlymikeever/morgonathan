@@ -1,71 +1,100 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+import { rhythm, scale } from '../utils/typography';
+import NavBar from '../components/navbar';
 
-import { rhythm, scale } from '../utils/typography'
-
+// const title = `Morgan${window.innerWidth < 768 ? '\n' : ' '}Emmett${
+//   window.innerWidth < 768 ? '\n' : ' '
+// }Balog`;
+const title = 'Morgan Emmett Balog'
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { location, children } = this.props;
+    const rootPath = `${__PATH_PREFIX__}/`;
+    let header;
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <React.Fragment>
+          <h1
             style={{
-              boxShadow: 'none',
+              textAlign: 'center',
+              marginBottom: rhythm(0.75),
+              marginTop: 0,
               textDecoration: 'none',
-              color: 'inherit',
+              whiteSpace: 'pre-wrap',
             }}
-            to={'/'}
           >
-            Gatsby Starter Blog
-          </Link>
-        </h1>
-      )
+            <Link
+              style={{
+                boxShadow: 'none',
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+              to={'/'}
+            >
+              {title}
+            </Link>
+          </h1>
+          <NavBar />
+          <img
+            style={{
+              width: '700px',
+              margin: '0 auto',
+              maxWidth: '100%',
+              display: 'block',
+            }}
+            src="/images/portait1-fullres.png"
+          />
+        </React.Fragment>
+      );
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
+        <React.Fragment>
+          <img
             style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
+              width: '700px',
+              margin: '0 auto',
+              maxWidth: '100%',
+              display: 'block',
             }}
-            to={'/'}
+            src="/images/portait3-fullres.png"
+          />
+          <h3
+            style={{
+              marginTop: rhythm(.5),
+              marginBottom: rhythm(-1),
+              color: '#a90505',
+            }}
           >
-            Gatsby Starter Blog
-          </Link>
-        </h3>
-      )
+            <Link
+              style={{
+                boxShadow: 'none',
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+              to={'/'}
+            >
+              Morgan Emmett Balog
+            </Link>
+          </h3>
+        </React.Fragment>
+      );
     }
     return (
       <div
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          maxWidth: rhythm(25),
+          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
         }}
       >
         {header}
         {children}
       </div>
-    )
+    );
   }
 }
 
-export default Template
+export default Template;

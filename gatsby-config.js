@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Morgan Balog | Writer, Artist & Cosmic Slime-Lord',
+    author: 'Morgan Balog',
+    description: 'Graduate of Ramapo College of New Jersey with a BA in Communications Writing, Morgan Balog is a writer of fiction, prose and poetry.',
+    siteUrl: 'https://morganemmettbalog.com',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -48,13 +48,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Morganemmettbalog.com`,
+        short_name: `MorganBalog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/pencil-icon.png`,
       },
     },
     `gatsby-plugin-offline`,
