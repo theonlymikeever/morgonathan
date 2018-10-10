@@ -55,7 +55,7 @@ const About = props => (
       call a global community. He wants to show you that something truly
       beautiful awaits on the other side.
     </p>
-    <Link to="/" rel="next">
+    <Link to="/" rel="home">
       ← Back
     </Link>
   </Layout>
