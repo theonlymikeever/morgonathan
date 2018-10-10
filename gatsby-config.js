@@ -5,7 +5,7 @@ module.exports = {
     description: 'Graduate of Ramapo College of New Jersey with a BA in Communications Writing, Morgan Balog is a writer of fiction, prose and poetry.',
     siteUrl: 'https://morganemmettbalog.com',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

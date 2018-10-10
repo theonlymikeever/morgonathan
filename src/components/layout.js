@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 
+const title = `Morgan${window.innerWidth < 768 ? '\n' : ' '}Emmett${window.innerWidth < 768 ? '\n': ' '}Balog`
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -13,9 +15,11 @@ class Template extends React.Component {
       header = (
         <h1
           style={{
-            marginBottom: rhythm(1.5),
+            textAlign: 'center',
+            marginBottom: rhythm(.75),
             marginTop: 0,
-            textDecoration: "none"
+            textDecoration: "none",
+            whiteSpace: 'pre-wrap'
           }}
         >
           <Link
@@ -26,7 +30,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Morgan Emmett Balog
+            {title}
           </Link>
         </h1>
       )

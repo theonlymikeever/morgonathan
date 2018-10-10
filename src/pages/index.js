@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 
 import Bio from '../components/Bio';
 import Layout from '../components/layout';
+import NavBar from '../components/navbar';
 import { rhythm } from '../utils/typography';
 
 class BlogIndex extends React.Component {
@@ -23,6 +24,9 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
+        <NavBar />
+        <hr />
+        <h3>Works</h3>
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
@@ -41,7 +45,13 @@ class BlogIndex extends React.Component {
             </div>
           );
         })}
-        <hr />
+        <hr
+          style={{
+            margin: '25px 0',
+            height: '1px',
+            background: 'linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%)' // not working!
+          }}
+        />
         <Bio />
       </Layout>
     );

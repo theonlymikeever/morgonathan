@@ -16,7 +16,7 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          'flex-wrap': 'wrap',
+          flexWrap: 'wrap',
           marginBottom: rhythm(2.5),
         }}
       >
