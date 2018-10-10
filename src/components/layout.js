@@ -13,9 +13,9 @@ class Template extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            textDecoration: "none"
           }}
         >
           <Link
@@ -26,7 +26,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Morgan Emmett Balog
           </Link>
         </h1>
       )
@@ -47,7 +47,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+           Morgan Emmett Balog
           </Link>
         </h3>
       )
@@ -57,7 +57,7 @@ class Template extends React.Component {
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(25),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
