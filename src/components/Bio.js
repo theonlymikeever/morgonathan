@@ -7,12 +7,16 @@ import 'typeface-merriweather'
 import profilePic from './profile-pic.jpg'
 import { rhythm } from '../utils/typography'
 
+import { InstagramIcon, LinkedInIcon, TwitterIcon } from './Svg';
+
+
 class Bio extends React.Component {
   render() {
     return (
       <div
         style={{
           display: 'flex',
+          'flex-wrap': 'wrap',
           marginBottom: rhythm(2.5),
         }}
       >
@@ -26,13 +30,44 @@ class Bio extends React.Component {
             height: rhythm(2),
           }}
         />
-        <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
-          </a>
+        <p
+          style={{
+            flex: '2'
+          }}
+        >
+          Morgan lives and works in New Jersey. You can follow him on the various soul-sucking social media platforms, if that's your jam. <br />
         </p>
+        <div
+          style={{
+            width: '100%',
+            flex: '0 0 100%'
+          }}
+        >
+          <a
+            href="https://twitter.com/MorganBALROG"
+            style={{
+              margin: '5px'
+            }}
+          >
+            <TwitterIcon height="25" width="25" />
+          </a>
+          <a
+            href="https://www.instagram.com/morganbalrog/"
+            style={{
+              margin: '5px'
+            }}
+          >
+            <InstagramIcon height="25" width="25" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/morgan-e-balog-55225558/"
+            style={{
+              margin: '5px'
+            }}
+          >
+            <LinkedInIcon height="25" width="25" />
+          </a>
+        </div>
       </div>
     )
   }
