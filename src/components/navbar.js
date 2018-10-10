@@ -20,5 +20,8 @@ export default () => (
     <li style={itemStyle}>
       <Link to="/contact">Contact</Link>
     </li>
+    <li style={itemStyle}>
+      <a href="/MorganBalogResume.pdf" rel="nofollow">Resume</a>
+    </li>
   </ul>
 )
